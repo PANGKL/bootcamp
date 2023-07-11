@@ -75,6 +75,6 @@ public class JavaQuest1 {
     int x = 2;
     // code here
     int result = e - o * x / y;
-    System.out.println("The result is " + result);
+    System.out.println("The variable result is " + result);
   }
 }
