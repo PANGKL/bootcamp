@@ -21,7 +21,7 @@ public class String1 {
     System.out.println(areTheyEqual);
     System.out.println(areTheyEqual2);
     System.out.println(b4);
-    
+  
 
     //chartAt(2), find the char at index 2 of the string
     String str4 = "helloworld";
