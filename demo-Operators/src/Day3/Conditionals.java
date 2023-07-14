@@ -1,3 +1,4 @@
+package Day3;
 public class Conditionals {
   public static void main(String[] args) {
     // if, else if , else
@@ -101,8 +102,8 @@ public class Conditionals {
     // Simple Version
     int dayOfWeek = 3;
     String dayName = " ";
-    switch (dayOfWeek) {
-      case 1:
+    switch (dayOfWeek) { // experssion, but not 主流
+      case 1: // value from switch (var)
         dayName = "Monday";
         break; // exit
       case 2:
@@ -127,7 +128,36 @@ public class Conditionals {
     }
     System.out.println(dayName);
 
-    //default
+    // default
+    String sex = "m"; // use String
+    String Output = "";
+    switch (sex) {
+      case "m":
+        Output = "male";
+        break;
+      case "f":
+        Output = "female";
+        break;
+    }
+    System.out.println("Sex is " + Output);
+
+    char grade2 = 'C';
+    int pocketmoney = 90;
+    switch (grade2) {
+      case 'A':
+        pocketmoney += 100;
+        break;
+      case 'B':
+        pocketmoney += 70;
+        break;
+      case 'C':
+        pocketmoney += 30;
+        break;
+      default:
+        pocketmoney += 10;
+    }
+    System.out.println("You can get $" + pocketmoney);
+
 
   }
 

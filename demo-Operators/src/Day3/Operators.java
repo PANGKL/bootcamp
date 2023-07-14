@@ -1,3 +1,4 @@
+package Day3;
 import java.util.stream.StreamSupport;
 
 public class Operators {

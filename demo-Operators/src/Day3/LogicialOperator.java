@@ -1,3 +1,4 @@
+package Day3;
 public class LogicialOperator {
   public static void main(String[] args) {
     boolean isExpensive = true;
