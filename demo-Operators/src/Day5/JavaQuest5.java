@@ -22,9 +22,9 @@ public class JavaQuest5 {
     }
 
 
-    
+
     if (found == true) {
-      System.out.println("We found " + count + " character c in the String.");
+      System.out.println("We found " + count + " character "+ target+ " in the String.");
     } else {
       System.out.println("Not Found.");
     }
