@@ -1,11 +1,9 @@
 package Day3;
+
 /**
  * Expected Output:
  * 
- * a > 9
- * str length < 27
- * 2020 is a leap year.
- * 2400 is a leap year.
+ * a > 9 str length < 27 2020 is a leap year. 2400 is a leap year.
  */
 
 // Primitive types and operators
@@ -18,8 +16,8 @@ public class Day3Exercise {
     } else if (a < 9 && a >= 0) {
       System.out.println("a is between 0 and 8");
       // code here
-    }else if(a > 9){
-        System.out.println("a > 9");
+    } else if (a > 9) {
+      System.out.println("a > 9");
     } else {
       System.out.println("a < 0");
     }
@@ -35,31 +33,47 @@ public class Day3Exercise {
 
     // Question : Determine whether year n is a leap year.
     /*
-     * Definiton of a leap year:
-     * If a year is divisible by 4 and not divisible by 100 or divisible by 400,
-     * then, it is a leap year.
+     * Definiton of a leap year: If a year is divisible by 4 and not divisible by 100 or divisible by 400, then, it is a leap year.
      */
     int year1 = 2009;
     // Program a condition to check if it is a leap year.
     // But should NOT print anything.
-    if (year1 % 400 == 0 || year1 % 100 != 0 && year1%4 == 0) {
+    if (year1 % 400 == 0 || year1 % 100 != 0 && year1 % 4 == 0) {
       System.out.println("2009 is a leap year.");
     }
 
     int year2 = 2020;
     // same as the above, but it will print out.
-    if (year2 % 400 == 0 || year2 % 100 != 0 && year2%4 == 0) {
+    if (year2 % 400 == 0 || year2 % 100 != 0 && year2 % 4 == 0) {
       System.out.println("2020 is a leap year.");
     }
     int year3 = 2400;
-    if (year3 % 400 == 0 || year3 % 100 != 0 && year3%4 == 0) {
+    if (year3 % 400 == 0 || year3 % 100 != 0 && year3 % 4 == 0) {
       System.out.println("2400 is a leap year.");
     }
     // same as the above, but it will print out.
     int year5 = 2100;
-    if (year5 % 400 == 0 || year5 % 100 != 0 && year5%4 == 0) {
+    if (year5 % 400 == 0 || year5 % 100 != 0 && year5 % 4 == 0) {
       System.out.println("2100 is a leap year.");
     }
     // same as the above, but it will NOT print out.
+
+
+
+    int aa = 300;
+
+
+
+    if (aa % 4 == 0) {
+      if (aa % 100 != 0) {
+        System.out.println("leap year");
+      } else {
+        System.out.println("not leap year");
+      }
+    } else if (aa % 400 == 0) {
+      System.out.println("leap year");
+    } else {
+      System.out.println("not leap year");
+    }
   }
 }

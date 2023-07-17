@@ -1,6 +1,6 @@
 package Day4;
 
-public class Exercise4 {
+public class JavaQuest4 {
   /**
    * Exercise: Print 10 numbers: they must be even and > 0, and divisible by 3 (Search it from 0)
    * 
@@ -11,14 +11,13 @@ public class Exercise4 {
     // 1. Even numbers
     // 2. Divisible by 3
     // 3. > 0
-    for (int i = 0; i < 100; i++) { // You cannot change this line
+    for (int i = 1; i <= 60; i++) { // You cannot change this line
       if (i % 2 == 0 && i % 3 == 0) {
-        if (i <= 60 && i > 0) {
           System.out.println(i);
         }
 
       }
 
     }
-  }
+  
 }

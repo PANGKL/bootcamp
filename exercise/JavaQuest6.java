@@ -21,3 +21,7 @@ public class JavaQuest6 {
     }
   }
 }
+//     a b c
+//   a b c 
+// a b c
+// 1 1 2 3 5 8
