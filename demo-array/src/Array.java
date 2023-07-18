@@ -8,9 +8,9 @@ public class Array {
 
 
     // Create Array (Approach 1)
-    // define length of nums
+    //            define length of nums
     // type
-    int[] nums = new int[3]; // 3 is the length of array nums
+    int[] nums = new int[3]; // 3 is the length of array nums, memory 上create的object
     // with index 0,1,2 (you can treat it as address)
     nums[0] = -40;
     nums[1] = 500;
@@ -44,7 +44,7 @@ public class Array {
 
 
 
-    int[] array = new int[] {3, 9, 12}; // no need index,
+    int[] array = new int[] {3, 9, 12}; // no need index,static, unchange,
 
     for (int i = 0; i < array.length; i++) {
       System.out.println("array [" + i + "] is " + nums[i]);

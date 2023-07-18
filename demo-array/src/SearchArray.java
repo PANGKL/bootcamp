@@ -14,7 +14,7 @@ public class SearchArray {
       if (str.charAt(i) == target) {
         System.out
             .println("The index of " + target + " in chars is [" + i + "].");
-        break;
+        
       }
     }
 
@@ -24,7 +24,7 @@ public class SearchArray {
       }
     }
 
-    // toCharArray()
+    // toCharArray() **常用 //最raw data type/ String charAt 較慢（低層d操作）
     String str2 = "I am a boy"; // 11 characters
     char[] arr = str2.toCharArray(); // method to chage str to char and becomes array
     for (int i = 0; i < arr.length; i++) {
@@ -64,7 +64,7 @@ public class SearchArray {
 
     
 
-    int min = 0;
+    int min = 0; //9999999; not the best
     int tempmax = max; //contain a temp for comparing of array value, and avoid to replace raw max value
 
     for (int i = 0; i < nums.length; i++) {

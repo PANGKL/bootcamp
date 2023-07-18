@@ -1,7 +1,7 @@
 package Day4;
 import java.util.Scanner;
 
-public class Exercise3 {
+public class JavaQuest3 {
   /**
    * Expected Output of Examples:
    * 

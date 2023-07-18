@@ -43,7 +43,7 @@ public class String1 {
     // contains()
     String s = "lo";
     System.out.println(str.contains(s)); // true (hello contains lo)
-    System.out.println(str.contains("ol")); // false( hello not contain ol)
+    System.out.println(str.contains("ol")); // false( hello not contain ol) include space
 
     if (str.contains(s)) {
       System.out.println("str contains lo");

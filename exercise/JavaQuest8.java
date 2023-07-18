@@ -31,7 +31,7 @@ public class JavaQuest8 {
         secondmax = nums[i];
       }
     }
-    System.out.println("nums  secound max = " + secondmax);
+    System.out.println("nums  second max = " + secondmax);
 
     /* ----------------------------------------------------------------------------------------------- */
 
@@ -49,7 +49,23 @@ public class JavaQuest8 {
       }
     }
 
-    System.out.println("nums2 secound max = " + secondmax2);
+    System.out.println("nums2 second max = " + secondmax2);
+
+    int max21 = -998;
+    int secondmax21 = -999;
+
+    for (int i = 0; i < nums.length; i++) {
+      if (nums2[i] > max21) {
+        secondmax21 = max21;
+        max21 = nums2[i];
+      } else if (nums2[i] > secondmax21) {
+        secondmax21 = nums2[i];
+      }
+    }
+
+    System.out.println("nums2.1 second max = " + secondmax2);
+
+
 
     /* ----------------------------------------------------------------------------------------------- */
     int max3 = -999;
@@ -66,7 +82,7 @@ public class JavaQuest8 {
       }
     }
 
-    System.out.println("nums3 secound max = " + secondmax3);
+    System.out.println("nums3 second max = " + secondmax3);
 
     /* ----------------------------------------------------------------------------------------------- */
 
@@ -75,14 +91,14 @@ public class JavaQuest8 {
     int multimax4 = 0;
     boolean multi = false;
 
-// find max
+    // find max
     for (int i = 0; i < nums4.length; i++) {
       if (nums4[i] > max4) {
         max4 = nums4[i];
       }
     }
 
-// count is or not multi max value
+    // count is or not multi max value
     for (int i = 0; i < nums4.length; i++) {
       if (nums4[i] == max4) {
         multimax4 += 1;
@@ -97,13 +113,17 @@ public class JavaQuest8 {
     for (int i = 0; i < nums4.length; i++) {
       if (multi) {
         if (nums4[i] > secondmax4 && nums4[i] <= max4) {
-          secondmax4 = nums4[i];  // secondmax turns to max but value is same, still secondmax
+          secondmax4 = nums4[i]; // secondmax turns to max but value is same, still secondmax
         }
       } else if (nums4[i] > secondmax4 && nums4[i] < max4) { // if not multi max
         secondmax4 = nums4[i];
       }
     }
 
-    System.out.println("nums4 secound max = " + secondmax4);
+
+    System.out.println("nums4 second max = " + secondmax4);
+
+
+
   }
 }
