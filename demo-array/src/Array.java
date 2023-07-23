@@ -8,7 +8,7 @@ public class Array {
 
 
     // Create Array (Approach 1)
-    //            define length of nums
+    // define length of nums
     // type
     int[] nums = new int[3]; // 3 is the length of array nums, memory 上create的object
     // with index 0,1,2 (you can treat it as address)
@@ -72,7 +72,6 @@ public class Array {
     for (int i = 0; i < numbers.length; i++) {
       System.out.println("numbers [" + i + "] = " + numbers[i]);
     }
-
     boolean[] arr2 = new boolean[2];
     arr2[0] = true;
     for (int i = 0; i < arr2.length; i++) {
@@ -97,8 +96,6 @@ public class Array {
     fruit[2] = "pear";
 
     System.out.println(Arrays.toString(fruit));
-
-    
 
 
 

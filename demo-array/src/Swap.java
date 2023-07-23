@@ -1,3 +1,5 @@
+import javax.print.DocFlavor.STRING;
+
 public class Swap {
   public static void main(String[] args) {
     int[] arr = new int[] {100, -400, 3, 99};
@@ -18,23 +20,31 @@ public class Swap {
     }
 
 
-    
 
-    String strr = "hello!";
+    String strr = "abcde";
     System.out.println(swapOddEvenCharacter(strr));
 
     // System.out.println(swapOddEvenCharacter(strr));
   }
 
+  public static double swapOddEvenCharacter(double str) {
+    return 1;
+
+  }
+
 
 
   public static String swapOddEvenCharacter(String str) {
+    // 1.think test case first
     // hello! ->ehll!o
     // abcd -> badc
+    // ""
+    // "cc hc"
+    // "abc cd"
 
     char temp = ' ';
-    char[] chars = str.toCharArray();
-
+    char[] chars = str.toCharArray(); // if write , it must be toCharArray
+    // (越Primitive原始,越快)
     for (int i = 0; i < chars.length; i++) {
       if (i % 2 != 0) {
         temp = chars[i];
@@ -43,14 +53,22 @@ public class Swap {
       }
     }
 
-    String output = "";
-    for (int i = 0; i < chars.length; i++) {
-      output += chars[i];
-    }
-    return output;
+    // String output = "";
+    // for (int i = 0; i < chars.length; i++) {
+    // output += chars[i];
+    // }
+    // return output;
+    return String.valueOf(chars); // 將array/int/轉成String 的method
+
+    // String str = String.valueOf(chars);
+    // String str2 = String.of(chars);
+    // String abc = new String(chars);
 
 
   }
 }
+
+
+// return String.of(chars)
 
 

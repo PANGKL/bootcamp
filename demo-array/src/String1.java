@@ -2,6 +2,8 @@ public class String1 {
   public static void main(String[] args) {
     // length(), equals(), charAt()
     String str = "Hello";
+
+    
     System.out.println(str.isEmpty()); // true of false
     String str2 = ""; // empty string
     System.out.println(str2.isEmpty()); // true
