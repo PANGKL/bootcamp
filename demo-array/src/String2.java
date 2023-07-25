@@ -45,6 +45,8 @@ public class String2 {
 
 
     String s = "Java is a programming lanuage";
+    String s1 = s.replace('s', 'd');
+    System.out.println(s1);
     System.out.println(s.replace("Java", "Python")); // CharSequence = String
     // (a,b) a == target, b == replacement
     System.out.println(s.replace('p', 'q'));

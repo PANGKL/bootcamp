@@ -1,36 +1,30 @@
 public class Test {
 
+  int weight;
+  int tall;
 
-  int a;
-  int b;
-
-
-  public void num1(int num) {
-    this.a = num;
+  public void setWeight(int kg) {
+    this.weight = kg;
   }
 
-  public void num2(int num) {
-    this.b = num;
+  public 
+
+  public void setTall(int cm) {
+    this.tall = cm;
   }
 
+  public void data() {
+    System.out.println("this.weight = " + this.weight);
+    System.out.println("this.tall = " + this.tall);
 
-  public String sum() {
-    String str = String.valueOf(this.a + this.b);
-    return str;
   }
-
-  public static int sum(int a, int b) {
-    return a + b;
-  }
-
-
 
   public static void main(String[] args) {
-    Test p1 = new Test();
-    p1.num1(10);
-    p1.num2(100);
-    System.out.println(p1.sum());
-    System.out.println(Test.sum(1, 3));
+    Test bmx = new Test();
+    bmx.setWeight(50);
+    bmx.setTall(300);
+
+    bmx.data();
 
   }
 

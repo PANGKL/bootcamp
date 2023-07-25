@@ -6,7 +6,7 @@ public class Person { // Class 本質 -> template
   // Each class should only one public class
   // attrubuite (形容屬性)
   // describle the person by attributes
-  int age;
+  private int age;
   char gender;
 
 
@@ -90,7 +90,6 @@ public class Person { // Class 本質 -> template
 
     p.setGender('M'); // insert value
     System.out.println(p.isMale1('F')); //
-
 
 
 
