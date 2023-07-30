@@ -7,13 +7,13 @@ public class String1 {
     System.out.println(str.isEmpty()); // true of false
     String str2 = ""; // empty string
     System.out.println(str2.isEmpty()); // true
-    String str3 = " ";
+    String str3 = "       ";
     System.out.println(str3.isEmpty()); // false, space also count charactor
 
     // blank
-    System.out.println(str.isBlank()); // false
-    System.out.println(str2.isBlank()); // true
-    System.out.println(str3.isBlank());// true , is blank if even space charactor
+    System.out.println("str blank "+str.isBlank()); // false
+    System.out.println("str2 blank "+str2.isBlank()); // true
+    System.out.println("str3 blank "+str3.isBlank());// true , is blank if even space charactor
 
     // toLowerCase(), toUpperCase()
     System.out.println(str.toUpperCase()); // HELLO

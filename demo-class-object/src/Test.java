@@ -29,5 +29,11 @@ public class Test {
     product.setPcost(20000);
     product.setQuantity(4);
     product.detail();
+
+
+
+
+
+
   }
 }

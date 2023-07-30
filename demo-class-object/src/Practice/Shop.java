@@ -3,21 +3,27 @@ package Practice;
 public class Shop {
 
 
-  private Guitar[] guitars;
+  public Guitar[] guitars;
 
   public static int counter;
 
 
 
-  public Shop(Guitar[] guitars) {
-    this.guitars = guitars;
+  public Shop(String brand, char size, double weight, int price) {
+   guitars = new Guitar[1];
+   guitars[0] = new Guitar(brand, size, weight, price);
+
   }
+
+
+  public Guitar[] geGuitars() {
+    return guitars;
+  }
+
 
   public static int getCounter() {
     return ++counter;
   }
-
-
 
 
 

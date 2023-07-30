@@ -18,8 +18,9 @@ public class ItemDesc {
     Transaction t = new Transaction(1, itemDesc, 3, 20);
     Transaction t2 = new Transaction(1, itemDesc2, 3, 20);
 
-    Order order = new Order(new Transaction[] {t, t2});
 
+
+    Order order = new Order(new Transaction[] {t, t2});
     System.out.println(order.getTotal());
 
 
