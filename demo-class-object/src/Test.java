@@ -30,8 +30,12 @@ public class Test {
     product.setQuantity(4);
     product.detail();
 
+    
+    int a = 10;
+    int b = 20;
 
-
+    int c = a > b ? a : b;
+    System.out.println(c);
 
 
 

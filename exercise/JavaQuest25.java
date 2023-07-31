@@ -21,6 +21,7 @@ public class JavaQuest25 {
     // save.to string array.
     if (s.isEmpty() || s.isBlank())
       return 0;
+      
     String[] str = s.trim().split(" ");
 
     return str.length;

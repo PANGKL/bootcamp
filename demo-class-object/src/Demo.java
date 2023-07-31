@@ -1,3 +1,6 @@
+import Abstracts.Person;
+import Abstracts.Student;
+
 public class Demo {
 
   public static void main(String[] args) {

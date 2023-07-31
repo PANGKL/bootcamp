@@ -10,10 +10,19 @@ public class TriangleEdge {
     this.color = color;
     this.length = length;
     this.id = id;
-
   }
 
-  
+  public String getColor() {
+    return color;
+  }
+
+  public int getId() {
+    return id;
+  }
+
+  public double getLength() {
+    return length;
+  }
 
 
 

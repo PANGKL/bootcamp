@@ -16,10 +16,12 @@ public class Triangle {
     triangleEdges[2] = new TriangleEdge(++id, length, color);
   }
 
-  public static void main(String[] args) {
-    Triangle tri1 = new Triangle(4.5d, "Black");
-
+  public TriangleEdge[] getTriagglesEdge() {
+    return this.triangleEdges;
   }
+
+
+
 
 
 

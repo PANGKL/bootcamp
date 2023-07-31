@@ -8,7 +8,9 @@ public class Car {
   private int capacity; // 0
   private String color; // null
 
-  public Car() {}
+  public Car() {
+    
+  }
 
 
   // All-arguements Constructor (with all attrbute)
