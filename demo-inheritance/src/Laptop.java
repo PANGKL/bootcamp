@@ -1,4 +1,4 @@
-
+import java.util.Objects;
 
 public class Laptop extends Machine { // inheritance
 
@@ -38,6 +38,18 @@ public class Laptop extends Machine { // inheritance
     super(weight); // super + this.setWeight(weight)
     this.keyboard = keyboard;
     this.monitor = monitor;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o)
+      return true;
+    if (!(o instanceof Laptop))
+      return false;
+    Laptop lap = (Laptop) o;
+    return Objects.equals(lap.keyboard, this.keyboard)
+        && Objects.equals(lap.monitor, this.monitor);
+
   }
 
 
@@ -93,12 +105,6 @@ public class Laptop extends Machine { // inheritance
     System.out.println(Machine.StaticMethod("abc", "123")); // abc123
     System.out.println(Machine.StaticMethod("abc", "123")); // call到但慢 abc123 (not recommended)
     Machine.StaticMethod(null, null);
-
-
-
-
-
-
 
 
 

@@ -11,11 +11,11 @@ public class Test {
     // char cha = ' ';
 
 
-    String str = "weedwweqw";
+    String str = "weedwweqw"; 
     str = str + "oklwewwe" + 1461923746;
     int str2 = str.length();
     System.out.println("\""+str+"\" have "+ str2+ " letter.");
-    System.out.println(str.charAt(2:6));
+    System.out.println(str.charAt(6));
     
 
   }

@@ -3,12 +3,12 @@ package Shape;
 public class Main {
 
   public static void main(String[] args) {
-    Square sq1 = new Square(5);
-    Square sq2 = new Square(10);
+    Square10 sq1 = new Square10(5);
+    Square10 sq2 = new Square10(10);
 
 
     // Square sq3 = new Square()
-    Square sq3 = new Square(3);
+    Square10 sq3 = new Square10(3);
     sq3.getEdges()[0].setColor("yello");
     // getEdges return array, so we can use getEdges()[2] directly and set color;
     System.out.println(sq3.getEdges()[0].getColor());
@@ -24,8 +24,8 @@ public class Main {
     sq1.modify(0, null);
 
 
-    Square s1 = Square.Of(4.5d);
-    Square s2 = Square.Of("hi");
+    Square10 s1 = Square10.Of(4.5d);
+    Square10 s2 = Square10.Of("hi");
 
 
 

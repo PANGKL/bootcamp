@@ -6,6 +6,7 @@ public class Student extends Adult {
     System.out.println("I am student");
   }
 
+  @Override
   public void read() {
     System.out.println("I am student, reading");
   }
