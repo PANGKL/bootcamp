@@ -50,8 +50,16 @@ public class LinkedList1 {
       head = head.getNode();
     }
 
-    List<String> String = new ArrayList<>();
-    
+    List<String> strings = new ArrayList<>();
+    strings.add("hi");
+    strings.add("bye");
+    strings.add("123");
+
+
+    ArrayList<String> strar = (ArrayList<String>) strings;
+
+    List<String> str2 = (List<String>) strar;
+    System.out.println(str2);
 
 
 

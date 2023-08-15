@@ -5,10 +5,11 @@ import java.util.PriorityQueue;
 
 public class DemoQueue {
   public static void main(String[] args) {
-    LinkedList<String> queue = new LinkedList<>();
+    LinkedList<String> queue = new LinkedList<>();  //Deque
     // First In First Out;
     queue.add("Hello");
     queue.add("World");
+
     System.out.println(queue.peek()); // Hello
     System.out.println(queue.poll()); // Hello
     System.out.println(queue.poll()); // World 抽取哂

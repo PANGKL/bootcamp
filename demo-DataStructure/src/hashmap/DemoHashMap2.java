@@ -18,7 +18,7 @@ public class DemoHashMap2 {
     HashMap<Author, Book> bookMap = new HashMap<>();
     // Author unqiue key? -> equals(), hashCode()
     Author author1 = new Author("John", 30);
-    Author author2 = new Author("John", 40);
+    Author author2 = new Author("pkl", 40);
 
     bookMap.put(author1, new Book("author", "Book3"));
     bookMap.put(author2, new Book("author", "Book3"));
@@ -47,20 +47,16 @@ public class DemoHashMap2 {
     for (Map.Entry<Author, ArrayList<Book>> entry : bookMap2.entrySet()) {
       // System.out.println("Author : " + entry.getKey().name);
       for (Book book : entry.getValue()) {
-        System.out.println("Author name: " + entry.getKey().name + " |"
+        System.out.println("Author name: " + entry.getKey().getName() + " |"
             + " Book name = " + book.getName());
       }
     }
 
 
-    for (Book book : bookMap2.get(new Author("John", 0))){
-      System.out.println(book.toString());
-    }
+    // for (Book book : bookMap2.get(new Author("John", 0))){
+    // System.out.println(book.toString());
+    // }
 
-
-
-
-    
 
 
   }

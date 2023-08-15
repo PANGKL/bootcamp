@@ -3,7 +3,7 @@ package hashmap;
 import java.util.Objects;
 
 public class Author {
-  String name;
+  private String name;
   int age;
 
   public Author(String name, int age) {
@@ -25,6 +25,9 @@ public class Author {
     return Objects.hash(this.name);
   }
 
+  public String getName() {
+    return name;
+  }
 
 
 }
