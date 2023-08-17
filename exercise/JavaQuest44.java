@@ -1,5 +1,9 @@
 package exercise;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /*
  * You are given a positive integer array nums.
  * 
@@ -21,13 +25,34 @@ package exercise;
  */
 public class JavaQuest44 {
   public static void main(String[] args) {
-    System.out.println(differenceOfSum(new int[] {1, 15, 6, 3})); //9
-    System.out.println(differenceOfSum(new int[] {1, 2, 3, 4})); //0
-    System.out.println(differenceOfSum(new int[] {1995, 1996, 1997, 2000}));//7911
+    System.out.println(differenceOfSum(new int[] {1, 15, 6, 3})); // 9
+    System.out.println(differenceOfSum(new int[] {1, 2, 3, 4})); // 0
+    System.out.println(differenceOfSum(new int[] {1995, 1996, 1997, 2000}));// 7911
 
   }
 
   public static int differenceOfSum(int[] nums) {
+
+    List<Integer> digit = new ArrayList<>();
+    // digit.add(1);
+
+    int sum = 0;
+    for (int i : nums) {
+      sum += i;
+    }
+
+    for (int i = 0; i < nums.length; i++) {
+      while (nums[i] > 0) {
+        digit.add(nums[i] % 10);
+        nums[i] = nums[i] / 10;
+      }
+    }
+    int digitsum = 0;
+    for (int i : digit) {
+      digitsum += i;
+    }
+
+    return sum - digitsum;
 
   }
 

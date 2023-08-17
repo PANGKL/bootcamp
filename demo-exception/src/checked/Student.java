@@ -16,7 +16,7 @@ public class Student {
   }
 
 
-  public void setPocketMoney(long pocketMoney) throws AmountZeroException{ // alert 要fix and handle
+  public void setPocketMoney(long pocketMoney) throws AmountZeroException { // alert 要fix and handle
     if (pocketMoney <= 0)
       throw new AmountZeroException("pocketMoney <= 0");
     this.pocketmoney = pocketMoney;

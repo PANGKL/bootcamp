@@ -56,6 +56,7 @@ public class LinkedList1 {
     strings.add("123");
 
 
+
     ArrayList<String> strar = (ArrayList<String>) strings;
 
     List<String> str2 = (List<String>) strar;
