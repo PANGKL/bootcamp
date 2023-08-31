@@ -1,6 +1,6 @@
 package unchecked;
 public class DemoStringIndex {
-  public static void main(String[] args) {
+  public static void main(String[] args)  {
     try {
       "abc".charAt(3);
 

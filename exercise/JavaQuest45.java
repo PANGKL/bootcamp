@@ -1,34 +1,54 @@
 package exercise;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 /*
- * You are given a positive integer array nums.
+ * Given two strings s and t, return true if they are equal when both are typed into empty text editors. '#' means a backspace character.
  * 
- * The element sum is the sum of all the elements in nums. The digit sum is the sum of all the digits (not necessarily distinct) that appear in nums. Return the absolute difference between the element
- * sum and digit sum of nums.
- * 
- * Note that the absolute difference between two integers x and y is defined as |x - y|.
- * 
- * Example 1: Input: nums = [1,15,6,3] Output: 9 Explanation: The element sum of nums is 1 + 15 + 6 + 3 = 25. The digit sum of nums is 1 + 1 + 5 + 6 + 3 = 16. The absolute difference between the
- * element sum and digit sum is |25 - 16| = 9.
- * 
- * Example 2: Input: nums = [1,2,3,4] Output: 0 Explanation: The element sum of nums is 1 + 2 + 3 + 4 = 10. The digit sum of nums is 1 + 2 + 3 + 4 = 10. The absolute difference between the element sum
- * and digit sum is |10 - 10| = 0.
- * 
- * 
- * Constraints:
- * 
- * 1 <= nums.length <= 2000 1 <= nums[i] <= 2000
+ * Note that after backspacing an empty text, the text will continue empty.
  */
-public class JavaQuest44 {
+public class JavaQuest45 {
   public static void main(String[] args) {
-    System.out.println(differenceOfSum(new int[] {1, 15, 6, 3})); //9
-    System.out.println(differenceOfSum(new int[] {1, 2, 3, 4})); //0
-    System.out.println(differenceOfSum(new int[] {1995, 1996, 1997, 2000}));//7911
+    System.out.println(backspaceCompare("ab#c", "ad#c"));
+    System.out.println(backspaceCompare("ab##", "c#d#"));
+    System.out.println(backspaceCompare("a#c", "b"));
+
+
 
   }
 
-  public static int differenceOfSum(int[] nums) {
+  // Approach 1
+  public static boolean backspaceCompare(String s, String t) {
+
+
+    Stack<Character> stack1 = new Stack<>();
+    Stack<Character> stack2 = new Stack<>();
+    for (int i = 0; i < s.length(); i++) {
+      char c = s.charAt(i);
+      if (!stack1.isEmpty() && c == '#')
+        stack1.pop();
+      if (c != '#') {
+        stack1.push(c);
+      }
+    }
+
+    for (int i = 0; i < t.length(); i++) {
+      char d = t.charAt(i);
+      if (!stack2.isEmpty() && d == '#')
+        stack2.pop();
+      if (d != '#') {
+        stack2.push(d);
+
+      }
+    }
+
+    // String s="";
+
+    return stack1.equals(stack2);
 
   }
-
 }
+
+

@@ -38,7 +38,7 @@ public class PredicateDemo {
     Predicate<LocalDate> iscoolingOff =
         effDate -> effDate.plusMonths(1).isAfter(LocalDate.now());
     test(iscoolingOff, LocalDate.of(2023, 07, 16), false);
-    test(iscoolingOff, LocalDate.of(2023, 07, 18), true);
+    test(iscoolingOff, LocalDate.of(2023, 07, 21), true);
 
   }
 

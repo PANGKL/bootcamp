@@ -5,7 +5,7 @@ public class Practice {
     public static void main(String[] args) {
         Optional<Member> optional = getMemberByIdFromDB();
         optional.ifPresent(mem -> {
-            System.out.println("会员姓名是：" + mem.getName());
+            System.out.println("Member name:" + mem.getName());
         });
     }
 

@@ -32,7 +32,7 @@ public class Demo {
     Queue<String> linkQueue = new LinkedList<>(); // linked list
     linkQueue.add("a");
     linkQueue.poll();
-    linkQueue.remove();
+
 
 
     Queue<String> pQueue = new PriorityQueue<>(); // array
@@ -43,7 +43,6 @@ public class Demo {
     List<Integer> arrayList = new ArrayList<>(); // array
     List<Integer> linkedlist = new LinkedList<>();
     linkedlist.add(3);
-    linkedlist.remove(3);
 
     arrayList.add(3);
     arrayList.remove(3);

@@ -15,6 +15,24 @@ public class JavaQuest46 {
   }
 
   public static int findGCD(int[] nums) {
+    int max = 0;
+    int min = nums[0];
+    for (int i : nums) {
+      max = Math.max(max, i);
+      min = Math.min(min, i);
+    }
+
+    int gcd = 0;
+    for (int i = 1; i <= min; i++) {
+      if (max % i == 0 && min % i == 0) {
+        gcd = i;
+      }
+    }
+
+    return gcd;
+
+
   }
 
 }
+

@@ -35,6 +35,7 @@ public class DemoGeneric {
       System.out.println(d);
     }
 
+    
 
   }
 

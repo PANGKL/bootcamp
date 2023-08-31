@@ -19,12 +19,14 @@ public interface Swimable {
       return p2.name.charAt(0) > p1.name.charAt(0) ? 1 : -1;
     };
 
-    List<Person> persons = Arrays.asList(new Person("ABC"), new Person("DEF"));
-    Collections.sort(persons, sortbynameDesc);
-    System.out.println(persons);
+    // List<Person> persons = Arrays.asList(new Person("ABC"), new Person("DEF"));
+    // Collections.sort(persons, sortbynameDesc);
+    // System.out.println(persons);
 
     // new object <- () -> System.out.println("Persn1 is swimming")
     Swimable person = () -> System.out.println("Persn1 is  swimming");
+    Swimable person1 = () -> System.out.println("123 hey");
+    person1.swim();
     person.swim();
 
     Swimable person3 = () -> {

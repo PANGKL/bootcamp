@@ -1,5 +1,6 @@
 package dataStruct;
 
+import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -18,6 +19,8 @@ public class DemoPQ {
     cs.add("bcd");
     cs.add("abc");
     cs.add("def");
+    
+
     System.out.println(cs.poll()); // def
   }
 
