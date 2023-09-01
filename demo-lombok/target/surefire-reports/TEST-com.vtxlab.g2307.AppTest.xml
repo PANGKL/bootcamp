@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.vtxlab.g2307.AppTest" time="0.015" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.vtxlab.g2307.AppTest" time="0.014" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="HK"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-lombok/target/surefire/surefirebooter7606082370569796818.jar /Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-lombok/target/surefire 2023-08-31T17-05-40_254-jvmRun1 surefire18425096587406085678tmp surefire_01462532489148614628tmp"/>
+    <property name="sun.java.command" value="/Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-lombok/target/surefire/surefirebooter13698173010872959594.jar /Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-lombok/target/surefire 2023-08-31T22-20-00_127-jvmRun1 surefire8248740199206949542tmp surefire_03635277032790428736tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-lombok/target/test-classes:/Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-lombok/target/classes:/Users/pangkamlok/.m2/repository/org/projectlombok/lombok/1.18.28/lombok-1.18.28.jar:/Users/pangkamlok/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/pangkamlok/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-lombok/target/surefire/surefirebooter7606082370569796818.jar"/>
+    <property name="surefire.real.class.path" value="/Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-lombok/target/surefire/surefirebooter13698173010872959594.jar"/>
     <property name="user.script" value="Hant"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -56,5 +56,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.vtxlab.g2307.AppTest" time="0"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.vtxlab.g2307.AppTest" time="0.001"/>
 </testsuite>

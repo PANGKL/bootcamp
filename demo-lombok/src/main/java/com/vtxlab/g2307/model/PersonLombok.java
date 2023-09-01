@@ -15,6 +15,7 @@ public class PersonLombok {
 
   @Getter 
   private String name;
+  
   @ToString.Include
   private int age;
 
