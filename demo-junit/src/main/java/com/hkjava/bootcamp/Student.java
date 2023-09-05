@@ -14,7 +14,7 @@ public class Student {
     subjects = new ArrayList<>();
   }
 
-  public List<Subject> getSubjects(){
+  public List<Subject> getSubjects() {
     return this.subjects;
   }
 

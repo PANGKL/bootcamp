@@ -10,7 +10,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 
 
-// @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(OrderAnnotation.class)
 public class PerClassTest {
   private int x;
@@ -18,15 +18,15 @@ public class PerClassTest {
   @Test
   @Order(2)
   void test1() {
-    x++;
-    assertEquals(1, this.x);
+    this.x++;
+    assertEquals(2, this.x);
   }
 
   @Test
   @Order(1)
   void test2() {
-    x++;
-    assertEquals(2, this.x);
+    this.x++;
+    assertEquals(1, this.x);
   }
 
 
