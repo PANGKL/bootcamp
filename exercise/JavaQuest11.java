@@ -1,7 +1,3 @@
-/**
- * Input: arrivalTime = 15, delayedTime = 5 Output: 20 Explanation: Reach at 15+5 = 20 (20:00).
- *
- */
 public class JavaQuest11 {
   // You are given a positive integer arrivalTime denoting the arrival time of a
   // train in hours,

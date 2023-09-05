@@ -43,7 +43,8 @@ public class StreamDemo {
     .map(s -> s.split(""))//
     .flatMap(s -> Arrays.stream(s))//
     .distinct()//
-    .map(s -> s.toString()).collect(Collectors.toList());
+    .map(s -> s.toString())//
+    .collect(Collectors.toList());
 
     System.out.println(ss);
 

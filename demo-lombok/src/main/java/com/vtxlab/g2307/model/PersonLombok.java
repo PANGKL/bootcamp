@@ -19,6 +19,7 @@ public class PersonLombok {
   @ToString.Include
   private int age;
 
+
   public static void main(String[] args) {
     PersonLombok personLombok = new PersonLombok("Peter", 23);
     PersonLombok p2 = new PersonLombok();

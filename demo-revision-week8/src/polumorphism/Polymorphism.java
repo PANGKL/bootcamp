@@ -40,7 +40,7 @@ public class Polymorphism {
     // Have one "Peter" obj in orders array, so return customer()
     order.order();
     System.out.println(Customer.counter);
-    Orderable order2 = getByName(orders, "Vincent"); 
+    Orderable order2 = getByName(orders, "Vincent");  // not vincent then return Driver()
     // no vincent obj in orders array, so return Driver()
     order2.order(); // +3 Driver().order() -> counter +3
     System.out.println(Customer.counter);
@@ -49,6 +49,8 @@ public class Polymorphism {
 
   }
 
+
+  // input orders[] list a
   public static Orderable getByName(Orderable[] orders, String name) {
     for (Orderable ord : orders) {
       if (ord instanceof Customer) {
