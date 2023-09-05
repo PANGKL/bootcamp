@@ -37,9 +37,6 @@ public class JavaQuest17 {
         arr[i] = '3';
       }
     }
-
-
-
     return Integer.valueOf(String.valueOf(arr));
   }
 }

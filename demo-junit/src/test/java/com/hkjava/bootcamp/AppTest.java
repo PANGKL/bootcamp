@@ -55,7 +55,7 @@ public class AppTest {
     }
 
     @Test
-    void testAssertNoNull(){
+    void testAssertNoNull() {
         Student student = new Student();
         assertNotNull(student.getSubjects());
     }

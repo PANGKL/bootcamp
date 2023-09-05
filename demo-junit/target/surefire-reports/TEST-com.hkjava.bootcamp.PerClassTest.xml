@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="HK"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-junit/target/surefire/surefirebooter-20230905113411236_3.jar /Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-junit/target/surefire 2023-09-05T11-34-11_179-jvmRun1 surefire-20230905113411236_1tmp surefire_0-20230905113411236_2tmp"/>
+    <property name="sun.java.command" value="/Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-junit/target/surefire/surefirebooter-20230905152539581_3.jar /Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-junit/target/surefire 2023-09-05T15-25-39_526-jvmRun1 surefire-20230905152539581_1tmp surefire_0-20230905152539581_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-junit/target/test-classes:/Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-junit/target/classes:/Users/pangkamlok/.m2/repository/org/projectlombok/lombok/1.18.28/lombok-1.18.28.jar:/Users/pangkamlok/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/pangkamlok/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/Users/pangkamlok/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/pangkamlok/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/pangkamlok/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/pangkamlok/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-junit/target/surefire/surefirebooter-20230905113411236_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/pangkamlok/Desktop/bootcamp/bootcamp/demo-junit/target/surefire/surefirebooter-20230905152539581_3.jar"/>
     <property name="user.script" value="Hant"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -56,6 +56,6 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="test1" classname="com.hkjava.bootcamp.PerClassTest" time="0.0"/>
   <testcase name="test2" classname="com.hkjava.bootcamp.PerClassTest" time="0.001"/>
+  <testcase name="test1" classname="com.hkjava.bootcamp.PerClassTest" time="0.0"/>
 </testsuite>
