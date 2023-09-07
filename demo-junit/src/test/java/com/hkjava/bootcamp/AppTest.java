@@ -1,6 +1,8 @@
 package com.hkjava.bootcamp;
 
 import static org.junit.jupiter.api.Assertions.*;
+import java.time.Duration;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
@@ -11,11 +13,13 @@ import org.junit.jupiter.api.TestInstance;
 // @TestInstance(TestInstance.Lifecycle.PER_CLASS) // Default
 
 @TestInstance(TestInstance.Lifecycle.PER_METHOD) // Default
+@DisplayName("Assert Method Tests")
 public class AppTest {
     /**
      * Rigorous Test :-)
      */
     private int x;
+
 
     @Test
     void testAddMethod() {
@@ -59,6 +63,53 @@ public class AppTest {
         Student student = new Student();
         assertNotNull(student.getSubjects());
     }
+
+    @Test
+    void testAsserThrows() {
+        assertThrows(ArithmeticException.class, () -> {
+            App.divide(10, 0);
+        });
+        assertDoesNotThrow(() -> {
+            App.add(10, 5);
+        });
+    }
+
+    @Test
+    void testAssertNotTimeout() {
+        assertTimeout(Duration.ofMillis(100), () -> {
+            Thread.sleep(50); // ms
+        });
+    }
+
+
+    @Test
+    void testCombine() {
+        assertAll( //
+                () -> assertTrue(10 > 3), //
+                () -> assertEquals(10, App.add(4, 6)), //
+                () -> assertNull(null)
+
+        );
+    }
+
+
+    @Test
+    void testSame() {
+        String s1 = new String("PKL");
+        String s2 = new String("PKL");
+        assertNotSame(s1, s2);
+        assertEquals(s1, s2);
+
+
+        String s3 = "Junit";
+        String s4 = "Junit";
+        assertSame(s3, s4);
+        assertEquals(s3, s4);
+
+
+
+    }
+
 
 
     public static void main(String[] args) {
