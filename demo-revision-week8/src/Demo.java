@@ -19,6 +19,7 @@ public class Demo {
     str.stream().map(e -> e.length()) // convert string to int
         .filter(l -> l < 5) //
         .forEach(e -> System.out.println(e)); // 3
+
   }
 
   Integer i1  = Integer.valueOf(1);

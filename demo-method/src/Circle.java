@@ -14,7 +14,8 @@ public class Circle {
 
     System.out.println(area);
     System.err.println(perimerter);
-    String area1 = area.substring(0, 4);
+    // String area1 = area.substring(0, 4);
+
   }
 
 }
